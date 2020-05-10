@@ -6,7 +6,8 @@ services:
       dockerfile: Dockerfile
     container_name: yarnevn
     restart: unless-stopped
-    # volumes: [本地路径]:/home/workerspace
+    #volumes: 
+    #  - 【本地路径】:/home/workerspace
     ports: 
       - "8080:8080"
     hostname: yarnevn
