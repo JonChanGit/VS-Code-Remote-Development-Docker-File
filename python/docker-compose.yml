@@ -1,0 +1,17 @@
+version: '2'
+services:
+  pythonevn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pythonevn
+    restart: unless-stopped
+    # volumes: 
+    #   - 【本地路径】:/home/workerspace/
+    # ports: 
+    #  - "8001:8001"
+    hostname: pythonevn
+    networks: 
+      python_net:
+networks:
+  python_net: 
